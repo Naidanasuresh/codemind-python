@@ -1,5 +1,6 @@
 n=int(input())
 lst=list(map(int,input().split()))
+res=0
 for i in lst:
-    if lst.count(i)==1:
-        print(i)
+    res^=i
+print(res)
